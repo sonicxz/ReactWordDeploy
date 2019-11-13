@@ -1,0 +1,34 @@
+.container {
+  border: 6px groove rgb(20, 15, 15);
+  box-shadow: 10px 10px 5px #888888;
+}
+.text {
+  display: flex;
+  flex-flow: row, wrap;
+  margin: 10px auto;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+  word-break: break-all;
+  padding: 10px;
+}
+.text[data-placeholder]:empty:not(:focus):before {
+  content: attr(data-placeholder);
+
+  float: left;
+
+  margin-left: 2px;
+
+  color: #b3b3b3;
+}
+
+.bold {
+  font-weight: 700;
+  color: red;
+}
+.italics {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
